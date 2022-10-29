@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  --font-size: 16;
+  font-size: calc(var(--font-size) * 1px);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: calc(40 / 16 * 1rem);
+  padding-bottom: calc(20 / 16 * 1rem);
+  border-bottom: 1.5px solid #000;
+}
+.logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  /* margin-left: calc((124 / 16) * 1rem); */
+}
+.logo img {
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.logo-name {
+  margin-left: calc(10 / 16 * 1rem);
+}
+.logo-name p {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-size: calc(24 / 16 * 1rem);
+  font-weight: 700;
+  line-height: calc(25 / 16 * 1rem);
+}
+
+nav {
+  width: calc(750 / 16 * 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: calc(523 / 16 * 1rem); */
+  /* margin-right: calc(120 / 16 * 1rem); */
+}
+nav a {
+  text-decoration: none;
+}
+nav p {
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(18 / 16 * 1rem);
+  font-weight: 700;
+  line-height: calc(25 / 16 * 1rem);
+  color: #000000;
+}
+nav p:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(218, 30, 109, 0.98) 0%,
+    #862ef8 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.get-in-touch-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 25px;
+
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.get-in-touch-button:hover {
+  background: #000000;
+}
+.get-in-touch-button:hover p ,.get-in-touch-button:hover > p:hover{
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.moon-toggle {
+  border-radius: 50%;
+  border: 2px solid #c8c8c8;
+  width: calc(50 / 16 * 1rem);
+  height: calc(50 / 16 * 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  height: calc(570 / 16 * 1rem);
+}
+.hero-bg {
+  float: right;
+}
