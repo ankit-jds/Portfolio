@@ -6,7 +6,7 @@
   font-size: 62.5%;
 }
 body {
-  width: 1728px;
+  /* width: 1728px; */
   /* overflow-y: scroll;
   scrollbar-width: none;  */
   /* Firefox */
@@ -339,10 +339,12 @@ nav p:hover {
 .experiences {
   background: rgba(243, 150, 206, 0.3);
   border: 0.2rem solid rgba(218, 30, 109, 0.98);
+  border-width: 0.2rem 0;
 }
 .works {
   background: rgba(202, 202, 202, 0.3);
   border: 2px solid rgba(30, 30, 30, 0.98);
+  border-width: 0.2rem 0;
 }
 .education .bg img,
 .experiences .bg img,
@@ -366,6 +368,9 @@ nav p:hover {
 .experiences .content-wrap,
 .works .content-wrap {
   padding-top: 5.7rem;
+  /* overflow-x: scroll; */
+}
+.scroller{
   overflow-x: scroll;
 }
 .education .content-wrap .name,
@@ -634,6 +639,9 @@ nav p:hover {
 .cta .cta-button:hover p {
   color: white;
 }
+footer{
+  border-top: 2px solid black;
+}
 footer .contact {
   display: flex;
   justify-content: space-between;
@@ -845,6 +853,6 @@ footer form .submit input:hover {
 @media screen and (max-device-width: 1536px) {
   * {
     /* background: #9747ff; */
-    /* font-size: calc(1536 * 10 / 1728 * 1px); */
+    font-size: calc(1536 * 10 / 1728 * 1px);
   }
 }
