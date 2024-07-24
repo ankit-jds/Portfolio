@@ -850,6 +850,9 @@ footer form .submit input:hover {
 
   color: #ffffff;
 }
+.reverse-content{
+  flex-direction: row-reverse;
+}
 @media screen and (max-device-width: 1536px) {
   * {
     /* background: #9747ff; */
